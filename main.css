@@ -1,18 +1,27 @@
+@font-face {font-family: "TacticSans-Reg"; 
+    src: url("//db.onlinewebfonts.com/t/28c0ba929947563500b21da15a88c6fe.eot"); src: url("//db.onlinewebfonts.com/t/28c0ba929947563500b21da15a88c6fe.eot?#iefix") format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/28c0ba929947563500b21da15a88c6fe.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/28c0ba929947563500b21da15a88c6fe.woff") format("woff"), url("//db.onlinewebfonts.com/t/28c0ba929947563500b21da15a88c6fe.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/28c0ba929947563500b21da15a88c6fe.svg#TacticSans-Reg") format("svg"); }
+
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "TacticSans-Reg";
 }
 
 header{
-    background-color: #808080;
+    background-color: #ff5900;
     justify-content: center;
     display: flex;
     padding: 16px 0;
+    color: black;
+    font-weight: bold;
 }
 
 body{
-    background-color: #a9a9a9;
+    background-color: snow;
+    color: black;
 }
 
 form{
@@ -26,10 +35,29 @@ input, button{
     margin: 4px;
 }
 
+div{
+    justify-content: center;
+    display: flex;
+}
+
 ul{
-    width: 100%;
+    margin-right: 230px;
 }
 
 ul li{
-    justify-content: center;
+    list-style: none;
+}
+
+ul li button{
+    background-color: snow;
+    padding: 6px;
+    border-style: none;
+}
+
+ul li button:hover{
+    cursor: pointer;
+}
+
+.feito button{
+    text-decoration: line-through;
 }
