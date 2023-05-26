@@ -2,7 +2,6 @@
     src: url("//db.onlinewebfonts.com/t/28c0ba929947563500b21da15a88c6fe.eot"); src: url("//db.onlinewebfonts.com/t/28c0ba929947563500b21da15a88c6fe.eot?#iefix") format("embedded-opentype"), 
     url("//db.onlinewebfonts.com/t/28c0ba929947563500b21da15a88c6fe.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/28c0ba929947563500b21da15a88c6fe.woff") format("woff"), url("//db.onlinewebfonts.com/t/28c0ba929947563500b21da15a88c6fe.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/28c0ba929947563500b21da15a88c6fe.svg#TacticSans-Reg") format("svg"); }
 
-
 *{
     padding: 0;
     margin: 0;
@@ -10,54 +9,35 @@
     font-family: "TacticSans-Reg";
 }
 
-header{
-    background-color: #ff5900;
-    justify-content: center;
-    display: flex;
-    padding: 16px 0;
-    color: black;
-    font-weight: bold;
-}
-
-body{
-    background-color: snow;
-    color: black;
+.container{
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
 }
 
 form{
-    display: flex;
-    justify-content: center;
-    padding: 8px 0;
+    padding: 16px;
+    width: 100%;
+    align-items: center;
 }
 
-input, button{
-    padding: 8px;
-    margin: 4px;
+form input,
+form button{
+    margin-top: 8px;
+    padding: 4px;
+    display:list-item;
+    width: 100%;
 }
 
-div{
-    justify-content: center;
-    display: flex;
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
 }
 
-ul{
-    margin-right: 230px;
-}
-
-ul li{
-    list-style: none;
-}
-
-ul li button{
-    background-color: snow;
-    padding: 6px;
-    border-style: none;
-}
-
-ul li button:hover{
-    cursor: pointer;
-}
-
-.feito button{
-    text-decoration: line-through;
+button{
+    height: 32px;
+    color: white;
+    font-weight: bold;
+    background-color: green;
 }

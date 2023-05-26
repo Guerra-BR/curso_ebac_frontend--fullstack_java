@@ -1,25 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <title>Lista de Tarefas</title>
+    <title>Cadastre-se</title>
 </head>
 <body>
-    <header>
-        <h1>Minha lista de afazeres</h1>
-    </header>
-    <form action="">
-        <input id="adicionar-tarefa" type="text" required placeholder="Insira uma nova tarefa">
-        <button type="submit">Adicionar tarefa</button>
-    </form>
-    <div>
-        <ul>
-        </ul>
+    <div class="container">
+        <form action="">
+            <input id="nome" name="nome" type="text" placeholder="Nome completo">
+            <input id="email" name="email" type="email" placeholder="Email">
+            <input id="telefone" name="telefone" type="tel">
+            <input id="cpf" name="cpf" type="number">
+            <input id="endereco" name="endereco" type="text" placeholder="Endereço Completo">
+            <input id="cep" name="cep" type="number">
+            <button type="submit">Cadastrar</button>
+        </form>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="main.js"></script>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
