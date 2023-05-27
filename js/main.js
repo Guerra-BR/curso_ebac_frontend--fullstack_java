@@ -37,8 +37,18 @@ $('form').validate({
         }
     },
     messages: {
-        nome: {
-            nome: 'Insira seu nome competo'
-        }
+        nome: 'Insira seu nome competo',
+        email: 'Insira um endereço de email válido',
+        telefone: 'Insira um telefone para contato',
+        cpf:'Insira seu CPF',
+        endereco:'Insira seu endereço completo',
+        cep:'Insira seu CEP',
+    },
+    submitHandler: function(form){
+        console.log(form)
+    },
+    invalidHandler: function(evento, validador){
+        let camposInvalidos = validador.numberOfInvalids()
+        alert(`Há ${camposInvalidos} campos preenchidos incorretamente`)
     }
 })
