@@ -1,0 +1,39 @@
+@font-face {font-family: "TacticSans-Reg"; 
+    src: url("//db.onlinewebfonts.com/t/28c0ba929947563500b21da15a88c6fe.eot"); src: url("//db.onlinewebfonts.com/t/28c0ba929947563500b21da15a88c6fe.eot?#iefix") format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/28c0ba929947563500b21da15a88c6fe.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/28c0ba929947563500b21da15a88c6fe.woff") format("woff"), url("//db.onlinewebfonts.com/t/28c0ba929947563500b21da15a88c6fe.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/28c0ba929947563500b21da15a88c6fe.svg#TacticSans-Reg") format("svg"); }
+
+*{
+    font-family: "TacticSans-Reg";
+}
+
+header{
+    margin-bottom: 64px;
+    background-color: #FF4500;
+    color: white;
+    padding: 16px;
+}
+
+.card-img-overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.card img{
+    max-height: 560px;
+}
+
+.card{
+    margin-bottom: 32px;
+}
+
+.container{
+    max-width: 1000px;
+}
+
+#reajuste{
+    max-width: 960px;
+    margin: 0 auto 56px;
+}
+
+header > .container{
+    max-width: 1200px;
+}
