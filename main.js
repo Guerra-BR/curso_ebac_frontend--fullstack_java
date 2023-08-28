@@ -1,23 +1,34 @@
-document.addEventListener('DOMContentLoaded', function(){
-    const nSeguidores = document.getElementById('seguidores')
-    const nSeguindo = document.getElementById('seguindo')
-    const nRepositorios = document.getElementById('repos')
-    const userName = document.getElementById('name')
-    const profileImage = document.getElementById('avatar')
-    const tag = document.getElementById('username')
-    const link = document.getElementById('link')
+function Dragao(especie, classe, chama){
+    this.classe = classe;
+    this.especie = especie;
+    this.chama = chama;
 
-    fetch('https://api.github.com/users/Guerra-BR')
-        .then(function(res){
-            return res.json()
-        })
-        .then(function(json){
-            nSeguidores.innerText = json.followers
-            nSeguindo.innerText = json.following
-            nRepositorios.innerText = json.public_repos
-            userName.innerText = json.name
-            profileImage.src = json.avatar_url
-            tag.innerText = json.login
-            link.href = json.html_url
-        })
-})
+    this.ataque = function(nomeDoAtaque){
+        console.log(`${especie} atacou com rajada de ${nomeDoAtaque}`)
+    }
+}
+
+function FuriaDaNoite(nome, caracteristica){
+    Dragao.call('Relampago', 'Furia da Noite', 'Plasma')
+    this.nome = nome
+    this.caracteristica = caracteristica
+
+    this.ataque = function(){
+        console.log(`Este Furia da noite atacou com rajada de plasma`)
+    }
+}
+
+function Nader(nome, caracteristica){
+    Dragao.call('Espinho', 'Nader Mortal', 'Magnésio')
+    this.nome = nome
+    this.caracteristica = caracteristica
+
+    this.ataque = function(){
+        console.log(`Este Furia da noite atacou com rajada de magnésio`)
+    }
+}
+
+
+const meuDragao = new FuriaDaNoite('Shadow', 'travesso')
+const maeDeShadow = new FuriaDaNoite('Darkness', 'harmoniosa')
+const dragaoDaAstrid = new Nader('Tempestade', 'Leal')
