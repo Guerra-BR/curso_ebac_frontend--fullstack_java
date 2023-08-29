@@ -1,34 +1,43 @@
-function Dragao(especie, classe, chama){
-    this.classe = classe;
-    this.especie = especie;
-    this.chama = chama;
+const arrayDeAlunos = [
+    {
+        nome: 'Aluno 1',
+        nota: 8
+    },
+    {
+        nome: 'Aluno 2',
+        nota: 5
+    },
+    {
+        nome: 'Aluno 3',
+        nota: 6
+    },
+    {
+        nome: 'Aluno 4',
+        nota: 4
+    },
+    {
+        nome: 'Aluno 5',
+        nota: 7
+    },
+    {
+        nome: 'Aluno 6',
+        nota: 10
+    },
+]
 
-    this.ataque = function(nomeDoAtaque){
-        console.log(`${especie} atacou com rajada de ${nomeDoAtaque}`)
+const notaMinima = 6
+let alunosAprovados = []
+function consultaAProvados(){
+    
+    for(aluno of arrayDeAlunos){
+        let notaDeste = aluno.nota
+
+        if(notaDeste <= notaMinima){
+            alunosAprovados.push(aluno.nome)
+        }
     }
+
+    console.log(alunosAprovados)
 }
 
-function FuriaDaNoite(nome, caracteristica){
-    Dragao.call('Relampago', 'Furia da Noite', 'Plasma')
-    this.nome = nome
-    this.caracteristica = caracteristica
-
-    this.ataque = function(){
-        console.log(`Este Furia da noite atacou com rajada de plasma`)
-    }
-}
-
-function Nader(nome, caracteristica){
-    Dragao.call('Espinho', 'Nader Mortal', 'Magnésio')
-    this.nome = nome
-    this.caracteristica = caracteristica
-
-    this.ataque = function(){
-        console.log(`Este Furia da noite atacou com rajada de magnésio`)
-    }
-}
-
-
-const meuDragao = new FuriaDaNoite('Shadow', 'travesso')
-const maeDeShadow = new FuriaDaNoite('Darkness', 'harmoniosa')
-const dragaoDaAstrid = new Nader('Tempestade', 'Leal')
+console.log(consultaAProvados())
