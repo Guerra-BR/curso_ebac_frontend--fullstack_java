@@ -32,7 +32,7 @@ function consultaAProvados(){
     for(aluno of arrayDeAlunos){
         let notaDeste = aluno.nota
 
-        if(notaDeste <= notaMinima){
+        if(notaDeste >= notaMinima){
             alunosAprovados.push(aluno.nome)
         }
     }
