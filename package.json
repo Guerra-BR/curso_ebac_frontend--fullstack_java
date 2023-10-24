@@ -1,0 +1,16 @@
+{
+  "name": "curso_ebac_frontend--fullstack_java",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "cypress": "^13.3.2"
+  },
+  "scripts": {
+    "cypress": "cypress",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
